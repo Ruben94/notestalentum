@@ -1,11 +1,28 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.usuario.noteapp.NoteDetailFragment"
-    android:background="#00bc00">
+    android:background="@android:color/holo_blue_dark"
+    android:padding="10dp">
 
+    <EditText
+        android:id="@+id/fragment_note_detail_tittle_text"
+        android:hint="Enter note tittle"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"/>
 
+    <EditText
+        android:id="@+id/fragment_note_detail_description"
+        android:hint="Enter note description"
+        android:background="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/fragment_note_detail_tittle_text"/>
 
-
-</FrameLayout>
+</RelativeLayout>
